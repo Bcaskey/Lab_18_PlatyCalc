@@ -1,1 +1,18 @@
-<h1>Hello World!</h1>
+<h3>My Calculator</h3>
+    <p>
+        <div plat-visible="{{showMeResult}}">
+            <h3>The result of {{task}} {{opt1}} and {{opt2}} is {{total}}.</h3>
+        </div>
+    </p>  
+        Operand 1:
+        <plat-input type="text" plat-bind="num1" placeholder="First number" required></plat-input>
+        <br/>
+        
+        Operand 2:
+        <plat-input type="text" plat-bind="num2" placeholder="Second number" required></plat-input>
+        <p>
+        <plat-button plat-tap="add()"> + </plat-button>
+        <plat-button plat-tap="subtract()"> - </plat-button>
+        <plat-button plat-tap="multiply()"> * </plat-button>
+        <plat-button plat-tap="divide()"> / </plat-button>
+        </p>
